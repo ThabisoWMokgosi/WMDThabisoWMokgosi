@@ -1,0 +1,445 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Arial, Helvetica, sans-serif;
+	color: red;
+}
+
+body{
+	width: 100vw;
+	height: 100vh;
+	overflow-x: hidden;
+	background-color: #43464B;
+}
+
+.container{
+width: 100%;
+min-height: 100vh;
+display: flex;
+justify-content: flex-start;
+background-color: #696969;
+}
+
+.container .left{
+width: 20%;
+height: 100%;
+background-color: #111;
+display: flex;
+flex-direction: column;
+align-self: flex-start;
+padding: 20px 0;
+border-right: 1px solid #222;
+position: fixed;
+background-color: #43464B;
+}
+
+.container .left p{
+	font-size: 18px;
+	color: grey;
+	text-transform: capitalize;
+	margin-bottom: 15px;
+	padding: 0 20px;
+}  
+
+.container .left .flow:nth-child(5){
+	margin-bottom: 30px;
+}
+
+.container .left .flow:hover:not(.home){
+	background-color: #222;
+}
+
+.container .left .home h2{
+	color: red;
+	font-weight: lighter;
+}
+
+.container .left .home span{
+	color: red;
+}
+
+.container .left .home{
+	background-color: rgba 236,35,35,0.212;
+	
+}
+
+.container .left .flow{
+width: 100%;
+display: flex;
+justify-content: flex-start;
+align-items: center;
+gap: 10px;
+padding: 15px 20px;
+margin:
+1px 0;
+cursor: pointer;
+transition: all 0.3s;
+color: white
+}
+
+.container .flow h2{
+	text-transform: capitalize;
+	color: rgb 226,226,226;
+	font-weight: 500;
+	font-size: 14px;
+	letter-spacing: 0px;
+	text-align: left;
+}
+
+.container .right{
+	width: 88%;
+	position: absolute;
+	right: 0px;
+	background-color: 28282B;
+	background-size: 1000px;
+}
+
+.container .right .image{
+	size: 10px 10px 10px 10px;
+	right: 60%;
+}
+
+.right .heading{
+	display: flex;
+	color: white;
+		
+}
+
+.right .heading .head-content{
+	width: 50%;
+	padding: 20px;
+	background-color: #111;
+	opacity: 0.5;
+
+}
+
+.right .heading .head-content h2{
+	font-size: 24px;
+	text-transform: capitalize;
+	
+}
+
+.head-content .rating{
+	display: flex;
+	margin: 30px 0;
+	 
+}
+
+.head-content .btn{
+	display: inline-block;
+	width: 80px;
+	height: 30px;
+	border:1px solid white;
+	font-size: 14px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 5px;
+	margin-left: 5px;
+	border-radius: 50px;
+	
+}
+
+.head-content .btn .material-icons{
+	font-size: 20px;
+}
+
+.head-content .btn .star{
+	color: greenyellow;
+}
+
+.head-content p{
+	font-size: 16pxpx;
+	letter-spacing: 1px;
+	margin-bottom: 30px;
+	
+} 
+
+.head-content .btn-main{
+	border-radius: 5px;
+	color: white;
+	text-decoration: none;
+	width: 120px;
+	font-size: 16px;
+	letter-spacing: 1px;
+	font-weight: 500;
+	background-color: red;
+	border: none;
+	text-transform: capitalize;
+}
+
+.right .heading .img-container{
+   width: 45%;
+   height: 100%px;
+  background-image: url('Extraction.jpg');
+   background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+  
+  
+}
+
+
+
+.trending{
+	margin-top: 40px;
+	padding-left: 20px;
+}
+
+.comedy{
+	margin-top: 40px;
+	padding-left: 20px;
+}
+
+.Sci-fi{
+	margin-top: 40px;
+	padding-left: 20px;
+}
+
+h1{
+	color: rgb 226,226,226;
+	font-size: 30px;
+	letter-spacing: 1px;
+	font-weight: 500;
+}
+
+h1 span{
+	font-size: 16px;
+	color: red;
+	font-weight: lighter;
+	margin-left: 20px;
+}
+
+.trending .movie-container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 20px;
+	margin-top: 20px;
+	size: 150px;
+	position: center;
+	List-style-position: inside;
+}
+
+.comedy .movie-container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 5px;
+	margin-top: 20px;
+	size: 190px;
+	
+}
+
+.Sci-fi .movie-container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 5px;
+	margin-top: 20px;
+	size: 190px;
+	float: center;
+	
+}
+
+ .list{
+	 width: 190px;
+	 height: 190px;
+	 position: relative;
+	 display: flex-direction;
+ }
+ 
+ 
+ .list::before{
+content: 'watch';
+width: 100%;
+position: absolute;
+left: 0;
+bottom: 0;
+background-color: rgba 0,0,0,0.5;
+font-size: 15px;
+color: white;
+visibility: hidden;
+opacity: 0;
+transform: translateY(50px);
+transition: all 0.4s;	
+text-align: center;
+ }
+ 
+.list:hover::before{
+	 transform: translateY(0);
+	 opacity: 1;
+	 visibility: visible;
+ }
+ 
+ .list::after{
+	 
+	 clear: both;
+	 display: table;
+	 
+ }
+ 
+ .Trending .list:nth-child(1){
+	 background-image: url('JohnWick.jpg');
+	 background-repeat: no-repeat;
+	 background-size: 190px;
+ }
+
+.Trending .list:nth-child(2){
+	background-image: url('Spidermannowayhome.jpg');
+	 	 background-size: 190px;
+		  background-repeat: no-repeat;
+}
+
+
+.Trending .list:nth-child(3){
+	background-image: url('Space_Jam.jpg');
+	 background-repeat: no-repeat;
+	 background-size: 190px;
+}
+
+
+.Trending .list:nth-child(4){
+	background-image: url('Nobody_PosterArt.jpg');
+	 background-repeat: no-repeat;
+	 background-size: 190px;
+}
+
+.Trending .list:nth-child(5){
+	background-image: url('JohnWick.jpg');
+	 background-repeat: no-repeat;
+	 background-image: 190px;
+}
+
+.Comedy .list:nth-child(1){
+	 background-image: url('Space_Jam.jpg');
+	 background-repeat: no-repeat;
+	 background-size: 190px;
+ }
+
+.Comedy .list:nth-child(2){
+	background-image: url('Spidermannowayhome.jpg');
+	 	 background-size: 190px;
+		  background-repeat: no-repeat;
+		  position: right
+}
+
+.Comedy .list:nth-child(3){
+	background-image: url('Madea.jpg');
+	 	 background-size: 190px;
+		  background-repeat: no-repeat;
+		  position: right
+}
+
+.Comedy .list:nth-child(4){
+	background-image: url('GROWN_UPS.jpg');
+	 	 background-size: 190px;
+		  background-repeat: no-repeat;
+		  position: right
+}
+
+.Comedy .list:nth-child(5){
+	background-image: url('movieposterH.jpg');
+	background-size: 190px;
+		  background-repeat: no-repeat;
+}
+
+.Sci-fi .list:nth-child(1){
+	background-image: url('Spidermannowayhome.jpg');
+	background-size: 190px;
+		  background-repeat: no-repeat;
+}
+
+.Sci-fi .list:nth-child(2){
+	background-image: url('iron.jpg');
+ background-repeat: no-repeat;
+	 background-size: 190px;
+	 position: center;
+	 }
+	 
+.Sci-fi .list:nth-child(3){
+	 background-image: url('Lightyear1.jpg');
+	 background-repeat: no-repeat;
+	 background-size: 190px;
+ }
+ 
+ .Sci-fi .list:nth-child(4){
+	background-image: url('Aliens1.jpg');
+	background-size: 190px;
+		  background-repeat: no-repeat;
+}
+
+.Sci-fi .list:nth-child(5){
+	background-image: url('Matrix.jpg');
+	background-size: 190px;
+    background-repeat: no-repeat;
+}
+	 
+.video-container{
+position: flex;
+top: 50%;
+left: 50%;
+width: 850px;
+}
+
+Video{
+position: flex;
+right: 0;
+bottom: 0;
+min-width: 100%; 
+min-height: 100%;
+opacity: 0.4;
+}
+	
+	 
+.button{
+	border: solid;
+	color: black;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+	position: right;
+	border-radius: 15px;
+	display: flex;
+	position: flex;
+	background-color: none;
+}
+ 
+.button-container{
+	width: 300px;
+	height: 200px;
+	padding-top: 100px;
+	position: fixed;
+}
+
+a:link{
+	    color: white;
+		background-color: transparent;
+		text-decoration: none;
+}
+
+a:visited{
+	color: white;
+	background-color: transparent;
+	text-decoration: none;
+}
+
+a:hover{
+         color: red;
+         background-color: transparent;
+         text-decoration: none;		 
+}
+
+a:active{ 
+color: white;
+background-color: transparent;
+text-decoration: none;
+}
+
